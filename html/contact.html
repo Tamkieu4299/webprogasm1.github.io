@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Kieu Cong Tam" />
+		<title>Contact me</title>
+	</head>
+	<body>
+		<!-- Header starts -->
+		<header id="header__container">
+			<nav class="navbar">
+				<table id="navbar__content">
+					<tr>
+						<td>
+							<table>
+								<tr>
+									<td>|</td>
+									<td>
+										<a href="aboutme.html">
+											<h3>About me</h3>
+										</a>
+									</td>
+									<td>|</td>
+									<td>
+										<a href="mycv.html">
+											<h3>My CV</h3>
+										</a>
+									</td>
+									<td>|</td>
+									<td>
+										<a href="projects.html">
+											<h3>Projects</h3>
+										</a>
+									</td>
+									<td>|</td>
+									<td>
+										<a href="contact.html">
+											<h3>Contact</h3>
+										</a>
+									</td>
+									<td>|</td>
+									<td>
+										<a href="blogs.html">
+											<h3>Blogs</h3>
+										</a>
+									</td>
+									<td>|</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</nav>
+		</header>
+		<!-- Header ends -->
+
+		<!-- Main starts -->
+		<main id="content__container">
+			<h1 class="content__heading">Contact Me</h1>
+            <img class="content__img" src="/img/contact1.jpg" alt="contact me">
+			<section class="content__display">
+				<form action="app/processing.php" method="post" enctype="multipart/form-data" target="_blank">
+					<label>Firstname :</label><br />
+					<input type="text" name="firstname" value="" /><br /><br />
+
+					<label>Lastname :</label><br />
+					<input type="text" name="lastname" value="" /><br /><br />
+
+					<label>Date of Birth :</label><br />
+					<input type="date" name="dayOfBirth" value="" /><br /><br />
+
+					<label>Phone :</label><br />
+					<input type="number" name="number" value="" /><br /><br />
+
+					<label>Email :</label><br />
+					<input type="email" name="email" value="" /><br /><br />
+
+					<label>Your are currently :</label><br />
+					<input
+						type="radio"
+						id="Student"
+						name="jobs"
+						value="Student"
+					/>
+					<label for="Student">Student</label><br />
+					<input
+						type="radio"
+						id="Undergraduated"
+						name="jobs"
+						value="Undergraduated"
+					/>
+					<label for="Undergraduated">Undergraduated</label><br />
+					<input type="radio" id="Work" name="jobs" value="Work" />
+					<label for="Work">At work</label><br />
+					<br />
+
+					<label for="Topic">You ask me for :</label>
+					<select id="Topic" name="Topic">
+						<option value="Frontend">Frontend</option>
+						<option value="Backend">Backend</option>
+                        <option value="Mobile">Mobile</option>
+						<option value="CompetitiveProgramming">Competitive Programming</option>
+						<option value="Hiring">Hiring</option>
+                        <option value="Courses">Courses</option>
+					</select>
+					<br />
+					<br />
+
+					<label for="message">Message :</label><br />
+					<textarea
+						id="message"
+						name="message"
+						rows="10"
+						cols="60"
+						placeholder="Type something..."
+					></textarea
+					><br /><br />
+
+					<input type="submit" value="Submit" />
+					<input type="reset" />
+				</form>
+                <br>
+                <br>
+                <img class="content__img" src="/img/contact2.jpg" alt="contact me">
+			</section>
+		</main>
+		<!-- Main ends -->
+		<br />
+		<br />
+		<!-- Footer starts -->
+
+		<footer class="footer__container">
+			<table id="footer__content">
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td>
+									<b>About me</b>
+								</td>
+
+								<td>|</td>
+
+								<td>
+									<b>My CV</b>
+								</td>
+
+								<td>|</td>
+
+								<td>
+									<b>Projects</b>
+								</td>
+
+								<td>|</td>
+
+								<td>
+									<b>Contact</b>
+								</td>
+
+								<td>|</td>
+
+								<td>
+									<b>Blogs</b>
+								</td>
+
+								<td>|</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						©Copyright 2022 by <b>KIEUCONGTAM Inc.</b> . All rights
+						reserved.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#header__container">
+							<h3>== TOP ==</h3>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</footer>
+		<!-- Footer ends -->
+	</body>
+</html>
